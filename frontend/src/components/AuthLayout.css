@@ -1,0 +1,43 @@
+/* Contenedor principal de pantalla dividida */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+}
+
+/* Panel Derecho: Formularios interactivos */
+.right-panel {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 520px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .right-panel {
+    width: 100%;
+    padding: 40px 24px;
+  }
+  
+  .form-wrapper {
+    min-height: auto;
+  }
+}
